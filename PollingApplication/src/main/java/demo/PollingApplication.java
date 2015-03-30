@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PollingApplication {
 
     public static void main(String[] args) {
+    	//test
         SpringApplication.run(PollingApplication.class, args);
     }
 }
