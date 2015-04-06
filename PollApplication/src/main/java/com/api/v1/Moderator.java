@@ -5,12 +5,12 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
-
+@SuppressWarnings({ "unused", "serial" })
 public class Moderator {
 
 	private int id;
 	
-	@NotNull @NotEmpty @Size(min=2, max=25)
+	@NotNull @NotEmpty(message = "Name cannod be blank") @Size(min=2, max=25)
 	private String name;
 	
 	@NotNull @NotEmpty @Email

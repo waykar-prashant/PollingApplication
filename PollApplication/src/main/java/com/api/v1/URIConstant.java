@@ -27,8 +27,10 @@ public class URIConstant {
 	//8
 	public static final String DELETE_POLL = "api/"+ ACTIVE_API_VERSION +"/moderators/{moderator_id}/polls/{poll_id}";
 	
-	//9
-	public static final String VOTE_POLL = "api/"+ ACTIVE_API_VERSION +"/polls/{poll_id}?choice={choice_index}";
+	//9 //"api/v1/polls/{poll_id}?choice={choice_index}"
+	public static final String VOTE_POLL = "api/"+ ACTIVE_API_VERSION +"/polls/{poll_id}";
+	public static final String VOTE_POLL_TEST = "api/"+ ACTIVE_API_VERSION +"/polls/{poll_id}";
+	
 
 	
 

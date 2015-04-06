@@ -3,10 +3,17 @@ package com.api.v1;
 public class PollDAO {
 	private String id;
 	private String question;
-	private String startedAt;
-	private String expiredAt;
+	private String started_at;
+	private String expired_at;
 	private String[] choice;
 	
+	public PollDAO(Poll poll) {
+		this.id = poll.getId();
+		this.question = poll.getQuestion();
+		this.started_at = poll.getStarted_at();
+		this.expired_at = poll.getExpired_at();
+		this.choice = poll.getChoice();
+	}
 	/**
 	 * @return the id
 	 */
@@ -34,26 +41,27 @@ public class PollDAO {
 	/**
 	 * @return the startedAt
 	 */
-	public String getStartedAt() {
-		return startedAt;
+	public String getStarted_at() {
+		return started_at;
 	}
 	/**
-	 * @param startedAt the startedAt to set
+	 * @param started_at the startedAt to set
 	 */
-	public void setStartedAt(String startedAt) {
-		this.startedAt = startedAt;
+	public void setStarted_at(String started_at) {
+		
+		this.started_at = started_at;
 	}
 	/**
 	 * @return the expiredAt
 	 */
-	public String getExpiredAt() {
-		return expiredAt;
+	public String getExpired_at() {
+		return expired_at;
 	}
 	/**
 	 * @param expiredAt the expiredAt to set
 	 */
-	public void setExpiredAt(String expiredAt) {
-		this.expiredAt = expiredAt;
+	public void setExpired_at(String expiredAt) {
+		this.expired_at = expiredAt;
 	}
 	/**
 	 * @return the choice
